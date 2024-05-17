@@ -19,7 +19,7 @@ class DialogControllerTest extends TestCase
 
         $this->post('api/dialog/create', $requestData);
 
-        $this->assertDatabaseCount('dialogs', 1);
+        $this->assertDatabaseCount('dialo', 1);
         $this->assertDatabaseHas('dialogs', $requestData);
     }
 
